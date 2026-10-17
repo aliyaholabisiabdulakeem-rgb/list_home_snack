@@ -2,6 +2,36 @@ import random
 numbers = []
 for index in range (1, 11):
     print(random.randint(1, 51))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print()
 
 numbers = [1, 2, 3, 4, 5]
@@ -56,15 +86,3 @@ largest = index[0]
 
 
 
-
-def largest_element_in_list(list):
-
-	largest = list[0]
-	
-	for number in list:
-		if number > largest:
-			largest = number
-	return largest
-	
-print(largest_element_in_list([1,2,3,4,5,6,7,8,9,10]))
-	
