@@ -64,6 +64,77 @@ print(list(map(add_ten_percent_tax, prices)))
 from functools import reduce
 def sum_of_numbers(a, b):
     return a + b
-print(reduce(sum_of_numbers(1, 51)))
+print(reduce(sum_of_numbers, range(1, 51)))
+
+def maximum_number(a, b):
+    if a > b:
+        return a
+    return b
+print(reduce(maximum_number, [3, 5, 9, 2, 8]))
+
+
+def concatenation(a, b):
+    return a + b
+print(reduce(concatenation, ['I', 'Love', 'Python']))
+
+
+
+def product(a,b):
+    return a * b
+def squares_of_numbers(c):
+    return c * c
+
+result = list(map(squares_of_numbers, [1, 2, 3, 4]))
+print(reduce(product , result))
+
+
+
+#def sum(num):
+#    a , b == num
+#    return a + b
+#
+#def tuple_greater_thab_five(data):
+#    return data > 5
+#summation = list(map(sum, [(1, 2), (3, 4), (5, 6)]))
+#print(summation)
+#print(list(filter(tuple_greater_than_five, summation)))
+#
+
+
+
+def is_a_numeric_string(data):
+    return data.isdigit()
+
+def convert_to_integers(data):
+    return int(data)
+
+def total_sum(a, b):
+    return a + b
+
+numeric_strings = list(filter(is_a_numeric_string, ['123', '456', '789', 'abc', 'def']))
+print("Numeric String: " , numeric_strings)
+
+integer = list(map(convert_to_integers, numeric_strings))
+print("Coverted to integers: ", integer)
+
+print(reduce(total_sum, integer))
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
